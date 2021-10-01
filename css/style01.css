@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    font-size: 14px;
+}
+header, footer{
+    background-color: yellowgreen;
+    height: 100px;
+    text-align: center;
+    font-size: 1.5em;
+}
+article, aside, nav{
+    border: 1px solid gray;
+    /*height: 300px;*/
+    height : calc(100vh - 200px);
+}
+section{
+    display:flex;
+}
+article{
+    flex : 3;
+}
+aside{
+    flex : 1;
+}
+nav{
+    flex : 1;
+}

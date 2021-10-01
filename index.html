@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Gootae's Site</title>
-    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        section{
+            display: flex;
+        }
+        .main{
+            flex : 4;
+        }
+        .right{
+            flex : 1;
+        }   
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kimgootae Home</h1>
+        <h1 class = "w3-text-indigo w3-xxlarge">Kimgootae Home</h1>
     </header>
 <nav>
     <ul>
@@ -20,8 +33,15 @@
     </ul>
 </nav>
 <section>
+    <article class = "main">
     <div id="profile">나의 사진<br>
-        <img width = "790" height=" 644" src="./images/goo.png" alt="">
+        <div class="w3-card" style="width:50%">
+            <img class="w3-grayscale" width = "790" height=" 644" src="./images/goo.png" alt="person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>kimgootae</b></h4>
+              <p>all of my life</p>
+            </div>
+          </div>
         <h2>좋아하는 음악</h2>
         <audio src="./media/music01.mp3" controls>
         지원하지 않는 브라우저입니다.
@@ -31,8 +51,8 @@
             <iframe width="790" height="444" src="https://www.youtube.com/embed/y-V16e6C-m0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <hr>
         <h2>My profile</h2>
-        <table border ="1">
-            <tr>
+        <table class="w3-table-all w3-hoverable">
+            <tr class ="w3-indigo">
                 <th>년도</th>
                 <th>내용</th>
                 <th>비고</th>
@@ -48,15 +68,17 @@
                 <td>내용03</td>
             </tr>
             <tr>
-                <td>내용01</td>
+                <td>내용01</td>     
                 <td>내용02</td>
                 <td>내용03</td>
             </tr>
         </table>
-
     </div>
     <div id="portfolio">포트폴리오를 테이블로 표시</div>
     <div id="contact">나의 주소와 이메일을 적음</div>
+    </article>
+    
+    <aside class = "right">
     <div id="link">
         <h2>즐겨찾는 사이트</h2>
         <a href="http://www.deu.ac.kr" target="_blank">동의대학교</a><br>
@@ -65,17 +87,19 @@
         <a href="#profile">나의 프로필</a>
     </div>
     <div id="login">
-        <form action="#" method="post">
-            아이디 : <input type="text" name = "id"><br>
-            비밀번호 : <input type="password" name="pw"><br>
-            <input type="submit" value="로그인">
-            <input type="reset" value="취소">
+        <form action="#" method="post" class="w3-container">
+            아이디 : <input type="text" name = "id" class="w3-input w3-border w3-light-grey"><br>
+            비밀번호 : <input type="password" name="pw"class="w3-input w3-border w3-light-grey"><br>
+            <input type="submit" class="w3-btn w3-blue-grey" value="로그인">
+            <input type="reset" class="w3-btn w3-blue-grey" value="취소">
         </form>
     </div>
 </section>
     <footer>
         <div id="copyright">주소와 저작권</div>
         <div id="sns">트위터, 인스타그램, 페이스북주소</div>
+            <i class='fas fa-camera' style='font-size:24px'></i>
+            <i class="fa fa-thumbs-o-up" style="font-size:24px"></i>
     </footer>
 </body>
 </html>
