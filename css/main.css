@@ -52,7 +52,7 @@
 .main-navi ul li.on {color:#7e3550;}
 
 .section-photo {width:100%; background-size:cover; height: 100%;}
-.section1{background:url("../image/web1.png") center top no-repeat;}
-.section2{background:url("../image/web2.png") center top no-repeat;}
-.section3{background:url("../image/web3.png") center top no-repeat;}
+.section1{background:url("./image/web1.png") center top no-repeat;}
+.section2{background:url("./image/web2.png") center top no-repeat;}
+.section3{background:url("./image/web3.png") center top no-repeat;}
 
