@@ -1,5 +1,5 @@
 
-#wrap {width:100%; box-sizing:border-box; position:relative; }
+#wrap {width:100%; box-sizing:border-box; position:relative; height: 100%;}
 
 .header {width:100%; top:0; left:0; z-index:1000; position: relative;}
 .header .header-inner {width:95%; height:100px; font-size:0; margin:0 auto;}
@@ -56,3 +56,5 @@
 .section2{background:url("../image/web2.png") center top no-repeat;}
 .section3{background:url("../image/web3.png") center top no-repeat;}
 
+.footer{background-color: #605c5c; padding: 20px;}
+.logo span {margin-left: 10px; color: white;}
