@@ -54,7 +54,7 @@ function setNavi(){
 		}
 	});
 
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    if($(window).scrollTop() + $(window).height() >= $(document).height()) {
         $(".main-navi > ul").children(".on").each(function(idx,item) {
             item.classList.remove("on");
         })
